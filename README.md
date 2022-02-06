@@ -1,7 +1,7 @@
 # VFAssessmentGarage
 
 This project contains a controller that has following endpoints.
-
+```
 1.
 Request: POST /api/v1/garage/park
 Body: {
@@ -41,7 +41,7 @@ Response: 200 List<StatusResource>
         ]
     }
 ]
-
+```
 
 # Technical Details
 Factory Pattern is used to create vehicles.
