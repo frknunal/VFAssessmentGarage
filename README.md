@@ -9,7 +9,7 @@ Body: {
     "colour": String,
     "vehicleType": Enum [Car, Truck, Jeep]
     }
-Response: 200 Result String.
+Response: 200 Allocated #numberOfSlots slot. or 400 Garage is full.
 
 2.
 Request: POST /api/v1/garage/leave/{vehicleNumber}
