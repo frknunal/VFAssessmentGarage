@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "a0e419d9-5e4c-4d22-b0e7-55758ee36134",
+		"name": "VFAssessmentGarage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Park",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plate\":\"34-BO-1987\",\r\n    \"colour\":\"White\",\r\n    \"vehicleType\": \"Car\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/garage/park",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"garage",
+						"park"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/garage/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"garage",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Leave",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/garage/leave/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"garage",
+						"leave",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
